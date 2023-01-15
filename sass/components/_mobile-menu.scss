@@ -1,6 +1,29 @@
-@media screen and (min-width:1200px) {
-    .menu-toggle,
-    .mobile-menu {
-        display:none;
-    }
+@media screen and (min-width: 1200px) {
+  .menu__toggle,
+  .mobile-menu {
+    display: none;
+  }
+}
+.js-menu-container {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 0;
+  opacity: 1;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.js-menu-container.is-open {
+  opacity: 1;
+  z-index: 12;
+  transform: translateX(0);
+}
+.js-close-menu {
+    position: absolute;
+   right: 0;
+    top: 5px;
 }

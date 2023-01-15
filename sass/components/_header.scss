@@ -32,7 +32,7 @@
       vertical-align: middle;
     }
   }
-  .menu-toggle {
+  .menu__toggle {
     margin-top: 10px;
     margin-right: 15px;
     margin-bottom: 10px;
@@ -45,7 +45,7 @@
     border: none;
     background: none;
   }
-  .menu-toggle {
+  .menu__toggle {
     &:hover svg {
       cursor: pointer;
       fill: $brandColor;
@@ -76,7 +76,7 @@
       letter-spacing: 0.03em;
     }
   }
-  .menu-toggle {
+  .menu__toggle {
     display: none;
   }
   .site-header {
@@ -87,9 +87,9 @@
       border-bottom: 1px solid $borderHeaderColor;
     }
   }
-  .site-header__navigation {
-    // margin-left: 83px;
-  }
+  // .site-header__navigation {
+  //   margin-left: 83px;
+  // }
   .site-header__navigation {
     ul {
       padding: 0px;
