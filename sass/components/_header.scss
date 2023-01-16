@@ -1,3 +1,5 @@
+
+
 /*  ------------------MOBILE------------------ */
 
 @media screen and (max-width: 767px) {
@@ -87,9 +89,6 @@
       border-bottom: 1px solid $borderHeaderColor;
     }
   }
-  // .site-header__navigation {
-  //   margin-left: 83px;
-  // }
   .site-header__navigation {
     ul {
       padding: 0px;
@@ -295,14 +294,13 @@
     line-height: 1.172;
     letter-spacing: 0.02em;
   }
-  .link {
+    .link {
     color: inherit;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.172;
   }
-}
 .link--is-active {
   position: relative;
   color: $brandColor;
@@ -328,4 +326,5 @@
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
   }
+}
 }
