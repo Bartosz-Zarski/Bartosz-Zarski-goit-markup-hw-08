@@ -14,14 +14,15 @@ $slidesBgColor: #eeeeee;
   flex-direction: column;
   align-items: center;
   padding: 106px 0px;
-}
-.solutions__bg {
-  background-image: linear-gradient(to right, $bgImgColor, $bgImgColor),
-    url(../images/header_background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 1600px;
-  margin: 0 auto;
+
+  &__bg {
+    background-image: linear-gradient(to right, $bgImgColor, $bgImgColor),
+      url(../images/header/header_background-1200px.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1600px;
+    margin: 0 auto;
+  }
 }
 .solutions {
   button {
