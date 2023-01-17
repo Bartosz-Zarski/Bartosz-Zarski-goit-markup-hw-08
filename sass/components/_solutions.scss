@@ -13,40 +13,131 @@ $slidesBgColor: #eeeeee;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 106px 0px;
+  padding: 58px 0px;
+}
+// .solutions {
+//   button {
+//     background-color: $brandColor;
+//     color: $white;
+//     padding: 10px 41px 10px 42px;
+//     width: 200px;
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.875;
+//     border: 0px;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     text-align: center;
+//     margin: 15px 0px 0px 0px;
+//   }
+// }
+.solutions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*---------------------- MOBILE ----------------------*/
 
-  &__bg {
+  @media screen and (max-width: 768px) {
+    .solutions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 58px 0px;
+    }
+    .solutions__bg {
+      background-image: linear-gradient(to right, $bgImgColor, $bgImgColor),
+        url(../images/header/header_background-768px.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 768px;
+      height: 400px;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (max-width: 768px) {
+  .solutions__bg {
     background-image: linear-gradient(to right, $bgImgColor, $bgImgColor),
-      url(../images/header/header_background-1200px.jpg);
+      url(../images/header/header_background-768px@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 1600px;
+    width: 768px;
+    min-height: 400px;
     margin: 0 auto;
   }
 }
-.solutions {
-  button {
-    background-color: $brandColor;
-    color: $white;
-    padding: 10px 41px 10px 42px;
-    width: 200px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    border: 0px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    text-align: center;
-    margin: 15px 0px 0px 0px;
+
+/* -------------------- TABLET ------------------------- */
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .solutions__bg {
+    background-image: linear-gradient(to right, $bgImgColor, $bgImgColor),
+      url(../images/header/header_background-1600px.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    min-height: 400px;
   }
 }
-.solutions {
-  button:hover,
-  button:focus,
-  button:active {
-    cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-width: 769px),
+  screen and (max-width: 1199px) {
+  .solutions__bg {
+    background-image: linear-gradient(to right, $bgImgColor, $bgImgColor),
+      url(../images/header/header_background-1600px@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    min-height: 400px;
+  }
+}
+/* ----------------- DESKTOP ------------------ */
+
+@media screen and (min-width: 1200px) {
+  .solutions {
+    padding: 106px 0px;
+
+    &__bg {
+      background-image: linear-gradient(to right, $bgImgColor, $bgImgColor),
+        url(../images/header/header_background-1600px.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 1600px;
+      margin: 0 auto;
+    }
+  }
+  .solutions {
+    button {
+      background-color: $brandColor;
+      color: $white;
+      padding: 10px 41px 10px 42px;
+      width: 200px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.875;
+      border: 0px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      text-align: center;
+      margin: 15px 0px 0px 0px;
+    }
+  }
+  .solutions {
+    button:hover,
+    button:focus,
+    button:active {
+      cursor: pointer;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }

@@ -78,9 +78,6 @@
       letter-spacing: 0.03em;
     }
   }
-  .menu__toggle {
-    display: none;
-  }
   .site-header {
     .container {
       display: flex;
@@ -193,6 +190,9 @@
       transition: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 250ms;
     }
+  }
+  .menu__toggle {
+    display: none;
   }
 }
 /* -------------DESKTOP--------------- */
