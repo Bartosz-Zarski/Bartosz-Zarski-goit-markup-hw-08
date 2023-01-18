@@ -2,36 +2,36 @@
   display: flex;
   align-items: justify-center;
   background-color: $teamBgColor;
-}
-.team {
-  > .container {
-    margin: 0 auto;
+  .team {
+    > .container {
+      margin: 0 auto;
+    }
   }
-}
-.team__title {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-bottom: 30px;
-}
-  .team__list {
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 30px;
+  }
+  &__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-inline: 15px;
     gap: 30px;
   }
-    .team__box {
+  &__box {
     background-color: $white;
     display: box;
     text-align: center;
-    width: 270px;
+    width: 450px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-    .team__box {
+  &__box {
     h3 {
       font-weight: 500;
       font-size: 16px;
@@ -42,7 +42,7 @@
       padding-bottom: 5px;
     }
   }
-    .team__smedia {
+  &__smedia {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +51,19 @@
     margin-bottom: 24px;
     vertical-align: middle;
   }
+}
+@media screen and (min-width: 769px) {
+  .team__box {
+    width: 354px;
+  } 
+}
+.team__list {
+  img {
+    background-size: contain;
+  }
+}
+/* -------------------------- DESKTOP ------------------------ */
+
 @media screen and (min-width: 1200px) {
   // .team {
   //   display: flex;
