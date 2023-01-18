@@ -1,19 +1,20 @@
 .lorem {
   display: flex;
   justify-content: center;
+    flex-wrap: wrap;
   padding: 0px 15px 0px 15px;
   gap: 30px;
+}
+.lorem__box {
+  width: 450px;
 }
 .lorem__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.171;
+  line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 10px;
-}
-.lorem__box {
-  width: 270px;
 }
 .lorem__paragraph {
   font-size: 14px;
@@ -21,6 +22,37 @@
   letter-spacing: 0.03em;
   color: $grey;
 }
-.lorem__icon {
+.lorem__box--svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
+  padding-block: 25px;
+  background-color: $teamBgColor;
+}
+/* --------------------------- TABLET ----------------------------- */
+.lorem__box {
+  width: 354px;
+}
+/* --------------------------- DESKTOP ----------------------------- */
+
+@media screen and (min-width: 1200px) {
+  .lorem {
+    display: flex;
+    justify-content: center;
+    padding: 0px 15px 0px 15px;
+    gap: 30px;
+
+    &__box {
+      width: 270px;
+    }
+    &__box--svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-block: 25px;
+      background-color: $teamBgColor;
+    }
+  }
 }

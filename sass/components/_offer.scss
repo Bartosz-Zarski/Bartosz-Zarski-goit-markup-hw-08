@@ -11,8 +11,7 @@
 }
 .offer__list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 25px 15px 0px 15px;
   gap: 30px;
 }
@@ -45,4 +44,9 @@
 }
 .offer__box:nth-child(3) p {
   padding: 27px 94px 27px 94px;
+}
+@media screen and (max-width: 1199px) {
+  .section__offer {
+    display: none;
+  }
 }

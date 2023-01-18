@@ -28,3 +28,10 @@ h1 {
   line-height: 1.363;
   margin: 0px 0px 15px 0px;
 }
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 26px;
+    line-height: 1.61;
+    text-transform: uppercase;
+  }
+}
