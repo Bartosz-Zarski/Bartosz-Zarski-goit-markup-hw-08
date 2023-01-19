@@ -100,6 +100,15 @@
     flex-direction: column;
     padding-right: 144px;
   }
+  .contact__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact__wrapper--tablet {
+    display: flex;
+    flex-direction: column;
+  }
 }
 /* -------------------- DESKTOP ----------------------- */
 
@@ -113,6 +122,10 @@
       flex-direction: row;
       gap: 0;
     }
+  }
+  .contact__wrapper {
+    display: flex;
+    flex-direction: row;
   }
   .contact {
     address {
