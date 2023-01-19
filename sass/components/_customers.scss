@@ -1,24 +1,16 @@
 .customers {
   h2 {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.166;
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
   }
-}
-.customers h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-bottom: 25px;
 }
 .customers__list {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   padding-top: 25px;
@@ -32,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   cursor: pointer;
   fill: $iconColor;
@@ -48,5 +40,27 @@
     border-color: $brandColor;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
+  }
+}
+/* ----------------- TABLET -------------------- */
+@media screen and (min-width: 769px) {
+  .customer__icon {
+    width: 226px;
+  }
+}
+/* ----------------- DESKTOP -------------------- */
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    h2 {
+      font-size: 36px;
+      line-height: 1.166;
+    }
+  }
+  .customers__list {
+    padding-top: 25px;
+  }
+  .customer__icon {
+    width: 170px;
   }
 }

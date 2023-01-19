@@ -174,16 +174,16 @@
             <li class="team__box">
               <figure>
                 <img
+                  class="team__picture"
                   src="images/team/team1-1200px.jpg"
                   srcset="images/team/team1-1200px@2x.jpg 1200w 2x,
                 images/team/team1-769px.jpg 1199w,
                 images/team/team1-769px@2x.jpg 1199w 2x,
                 images/team/team1-480px.jpg 768w,
                 images/team/team1-480px@2x.jpg 768w 2x,"
-                sizes="(mmax-width: 768px) 450px, (min-width: 600px) 300px, 100vw"
                   alt="Product designer"
                   width="270"
-                  height="260" -->
+                  height="260"
                 />
                 <figcaption>
                   <h3 class="team__title">John Doe</h3>
@@ -224,6 +224,7 @@
             <li class="team__box">
               <figure>
                 <img
+                  class="team__picture"
                   src="images/team/team2-1200px.jpg"
                   srcset="images/team/team2-1200px@2x.jpg 1200w 2x,
                 images/team/team2-769px.jpg 1199w,
@@ -273,6 +274,7 @@
             <li class="team__box">
               <figure>
                 <img
+                  class="team__picture"
                   src="images/team/team3-1200px.jpg"
                   srcset="images/team/team3-1200px@2x.jpg 1200w 2x,
                 images/team/team3-769px.jpg 1199w,
@@ -322,6 +324,7 @@
             <li class="team__box">
               <figure>
                 <img
+                  class="team__picture"
                   src="images/team/team4-1200px.jpg"
                   srcset="images/team/team4-1200px@2x.jpg 1200w 2x,
                 images/team/team4-769px.jpg 1199w,
@@ -471,20 +474,22 @@
             </li>
           </ul>
         </div>
+        <!-- Blok Newsletter -->
         <div class="newsletter">
-          <!-- Blok Newsletter -->
-          <h3>Zapisz się do Newslettera</h3>
-          <form name="signup_form" autocomplete="on" novalidate>
-            <label>
-              <input type="email" name="email" placeholder="E-mail" />
-            </label>
-          </form>
+          <div class="newsletter__wrapper">
+            <h3>Zapisz się do Newslettera</h3>
+            <form name="signup_form" autocomplete="on" novalidate>
+              <label>
+                <input type="email" name="email" placeholder="E-mail" />
+              </label>
+            </form>
+          </div>
+          <button class="newsletter__btn newsletter__btn--is-active" type="submit">
+            Zapisz się<svg width="24" height="24">
+              <use href="images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
         </div>
-        <button class="newsletter__btn newsletter__btn--is-active" type="submit">
-          Zapisz się<svg width="24" height="24">
-            <use href="images/icons.svg#icon-icon-send"></use>
-          </svg>
-        </button>
       </div>
       <div class="backdrop is-hidden" data-modal>
         <!-- Modala nie tykam lepiej :D -->
