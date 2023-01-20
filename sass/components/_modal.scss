@@ -44,9 +44,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $grey;
+  padding-top: 10px;
   display: flex;
   align-items: center;
-  padding-top: 10px;
 }
 .modal__checkbox--custom {
   a {
@@ -236,25 +236,27 @@
 /* ------------------- MOBILE ----------------- */
 @media screen and (max-width: 480px) {
   .modal {
-    // height: 90%;
     width: 90%;
   }
   .field {
     width: 90%;
   }
   .modal__checkbox--custom {
-    font-size: 8px;
-    letter-spacing: 0.02em;
-    line-height: 1.2;
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+    text-align: center;
   }
   .modal__send-btn {
     margin-top: 5px;
   }
-  .modal__checkbox--custom {
-    a {
-      padding-inline: 4px;
-      text-align: center;
-    }
+
+  .field__checkbox {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 /* ------------------- MOBILE/TABLET ----------------- */
