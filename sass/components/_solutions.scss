@@ -105,12 +105,14 @@ $slidesBgColor: #eeeeee;
   .solutions {
     padding: 106px 0px;
 
+
     &__bg {
       background-image: linear-gradient(to right, $bgImgColor, $bgImgColor),
         url(../images/header/header_background-1600px.jpg);
       background-repeat: no-repeat;
       background-position: center;
-      width: 1600px;
+      width: 100%;
+      max-width: 1600px
       margin: 0 auto;
     }
   }

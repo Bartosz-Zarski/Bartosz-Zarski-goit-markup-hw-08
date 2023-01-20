@@ -49,15 +49,15 @@
   padding-top: 10px;
 }
 .modal__checkbox--custom {
-    a {
-        padding-inline: 4px;
-  color: $brandColor;
-    }
+  a {
+    padding-inline: 4px;
+    color: $brandColor;
+  }
 }
 .modal__checkbox--custom {
-    svg {
-        --color1: #fff;
-    }
+  svg {
+    --color1: #fff;
+  }
 }
 .modal__checkbox {
   display: none;
@@ -74,50 +74,50 @@
   border-radius: 3px;
 }
 .modal__icon-wrapper {
-    svg {
-        opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  svg {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .modal__checkbox:checked {
-    + .modal__icon-wrapper {
-        border: none;
-    }
+  + .modal__icon-wrapper {
+    border: none;
+  }
 }
 .modal__checkbox:checked {
-    + .modal__icon-wrapper svg {
-        --color1: #2196f3;
-  opacity: 1;
-    }
+  + .modal__icon-wrapper svg {
+    --color1: #2196f3;
+    opacity: 1;
+  }
 }
 .modal__icon-checkbox {
   width: 16px;
   height: 15px;
 }
 .modal__sign {
-    input {
-        border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-    }
+  input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
 }
 .modal__sign {
-    textarea {
-        border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  resize: none;
-  padding-top: 10px;
-  padding-inline: 16px;
+  textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding-top: 10px;
+    padding-inline: 16px;
+  }
 }
-    }
 .modal__sign {
-    textarea::placeholder {
-        font-family: 'Roboto';
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-    }
+  textarea::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 .field {
   display: flex;
@@ -126,49 +126,49 @@
   position: relative;
 }
 .field {
-    svg {
-        position: absolute;
-  top: 50%;
-  left: 11px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 11px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .field {
-    input {
-        padding-top: 10px;
-  padding-bottom: 11px;
-  padding-left: 42px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  input {
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .field {
-    input:focus {
-        outline: none;
-  border: 1px solid $brandColor;
-    }
+  input:focus {
+    outline: none;
+    border: 1px solid $brandColor;
+  }
 }
 .field {
-    textarea {
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  textarea {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .field {
-    textarea:focus {
-       outline: none;
-  border: 1px solid $brandColor;
-    }
+  textarea:focus {
+    outline: none;
+    border: 1px solid $brandColor;
+  }
 }
 .field {
-    input:focus + svg {
-        fill: $brandColor
-    }
+  input:focus + svg {
+    fill: $brandColor;
+  }
 }
 .field {
-    textarea:focus {
+  textarea:focus {
     &::placeholder {
-        color: $brandColor;
+      color: $brandColor;
     }
-}
+  }
 }
 .modal__send-btn {
   width: 200px;
@@ -192,16 +192,16 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-    h2 {
-        font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding: 40px 40px 12px 40px;
-    }
+  h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 40px 40px 12px 40px;
+  }
 }
 .is-hidden {
   opacity: 0;
@@ -209,9 +209,9 @@
   pointer-events: none;
 }
 .is-hidden {
-    .modal {
-        transform: scale(0.2);
-    }
+  .modal {
+    transform: scale(0.2);
+  }
 }
 .modal__btn--closed {
   display: flex;
@@ -228,12 +228,38 @@
   cursor: pointer;
 }
 .modal__btn--closed {
-    @include active {
-        background-color: $iconColor;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  @include active {
+    background-color: $iconColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-@media screen and (max-width: 1199px) {
+/* ------------------- MOBILE ----------------- */
+@media screen and (max-width: 480px) {
+  .modal {
+    // height: 90%;
+    width: 90%;
+  }
+  .field {
+    width: 90%;
+  }
+  .modal__checkbox--custom {
+    font-size: 8px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+  }
+  .modal__send-btn {
+    margin-top: 5px;
+  }
+  .modal__checkbox--custom {
+    a {
+      padding-inline: 4px;
+      text-align: center;
+    }
+  }
+}
+/* ------------------- MOBILE/TABLET ----------------- */
+
+@media screen and (min-width: 481px) and (max-width: 1199px) {
   .field {
     width: 370px;
   }

@@ -44,6 +44,11 @@
 }
 /* ----------------- TABLET -------------------- */
 @media screen and (min-width: 769px) {
+  .customers {
+    .container {
+      width: 768px;
+    }
+  }
   .customer__icon {
     width: 226px;
   }
