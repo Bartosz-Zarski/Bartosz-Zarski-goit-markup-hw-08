@@ -1,3 +1,6 @@
+.section__offer {
+  padding-top: 0;
+}
 .container {
   width: 768px;
   margin: 0;
@@ -27,4 +30,7 @@
     width: 1200px;
     margin: 0 auto;
   }
+  .section__offer {
+  padding-top: 0;
+}
 }
