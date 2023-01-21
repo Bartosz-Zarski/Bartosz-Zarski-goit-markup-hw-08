@@ -243,9 +243,11 @@
     width: 90%;
   }
   .modal__checkbox--custom {
-    font-size: 8px;
+    font-size: 12px;
     letter-spacing: 0.02em;
     line-height: 1.2;
+    max-width: 90%;
+    margin: 0 auto;
   }
   .modal__send-btn {
     margin-top: 5px;
@@ -254,6 +256,11 @@
     a {
       padding-inline: 4px;
       text-align: center;
+    }
+  }
+  .modal__checkbox--custom {
+    span {
+      font-size: 12px;
     }
   }
 }
